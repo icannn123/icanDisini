@@ -1,0 +1,31 @@
+<html>
+
+<style>
+  img {
+    height: 25%;
+  }
+</style>
+
+<body style="font-family: arial;">
+  <title>hola</title>
+  <h1>holaaa!</h1>
+  <img src="https://media.giphy.com/media/FAFo1M7EC4gRZ4HETH/giphy.gif" />
+  <h1>apa kabar?</h1>
+  <button id="btn_mau" onclick="alert('salam kenal, gue ICAN')">
+    <h1>baik</h1>
+  </button>&nbsp;
+  <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+    <h1>bad</h1>
+  </button>
+</body>
+<script>
+  function gamau(id) {
+    var mau = document.getElementById("btn_mau");
+    var i = Math.floor(Math.random() * 300) + 1;
+    var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+    id.style.left = i + "px";
+    id.style.top = j + "px";
+  }
+</script>
+
+</html>

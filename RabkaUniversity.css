@@ -1,0 +1,130 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary: #2FF3E0;
+    --bg-secondary: #ffffff;
+    --txt-primary: #fa26a0;
+    --txt-secondary: #f8d210;
+    --icons-primary: #f51720;
+    --icons-secondary: #000000;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.container2 {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid var(--txt-primary);
+    background-color: var(--txt-secondary);
+    color: var(--icons-primary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, .5);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--txt-primary);
+}
+
+
+.description {
+    margin-top: 8px;
+    font-size: .7em;
+}
+
+.description2 {
+    margin-top: 8px;
+    font-size: 2em;
+}
+
+a {
+    background-color: var(--txt-primary);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 90%;
+    color: var(--txt-secondary);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, .5), 
+    -2px -2px 4px rgba(255, 255, 255, .5);
+    border-radius: .5;
+    -webkit-border-radius: .5;
+    -moz-border-radius: .5;
+    -ms-border-radius: .5;
+    -o-border-radius: .5;
+}
+
+a:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, .5), 
+    -2px -2px 4px rgba(245, 23, 32, .5);
+}
+
+@media screen and (max-width: 476px) {
+    .card {
+        width: 70%
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1300px) {
+    .container {
+        display: none;
+    }
+
+    .container2 {
+        display: block;
+    }
+}
